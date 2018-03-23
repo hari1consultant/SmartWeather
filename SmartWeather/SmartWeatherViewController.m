@@ -20,6 +20,7 @@
 @property (nonatomic, strong) NSDateFormatter *hourlyFormatter;
 @property (nonatomic, strong) NSDateFormatter *dailyFormatter;
 
+
 @end
 
 @implementation SmartWeatherViewController
