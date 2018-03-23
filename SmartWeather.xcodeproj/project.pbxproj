@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		848A2D4D533346B79C10BA89 /* libPods-SmartWeather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1A04D977253C1803052FE7 /* libPods-SmartWeather.a */; };
+		D9FDBDF51E8001E500D581F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FDBDF41E8001E500D581F6 /* main.m */; };
+		D9FDBDF81E8001E500D581F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FDBDF71E8001E500D581F6 /* AppDelegate.m */; };
+		D9FDBDFB1E8001E500D581F6 /* SmartWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FDBDFA1E8001E500D581F6 /* SmartWeatherViewController.m */; };
+		D9FDBDFE1E8001E600D581F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9FDBDFC1E8001E600D581F6 /* Main.storyboard */; };
+		D9FDBE001E8001E600D581F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9FDBDFF1E8001E600D581F6 /* Assets.xcassets */; };
+		D9FDBE031E8001E600D581F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9FDBE011E8001E600D581F6 /* LaunchScreen.storyboard */; };
+		D9FDBE0C1E8017D600D581F6 /* SmartWeatherCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FDBE0B1E8017D600D581F6 /* SmartWeatherCondition.m */; };
+		D9FDBE0F1E8017E400D581F6 /* SmartWeatherManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FDBE0E1E8017E400D581F6 /* SmartWeatherManager.m */; };
+		D9FDBE121E8017F700D581F6 /* SmartWeatherDailyForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FDBE111E8017F700D581F6 /* SmartWeatherDailyForecast.m */; };
+		D9FDBE151E80180000D581F6 /* SmartWeatherClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FDBE141E80180000D581F6 /* SmartWeatherClient.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A764FDEB323A12DB39B2B6F /* Pods-SmartWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartWeather/Pods-SmartWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		7A1A04D977253C1803052FE7 /* libPods-SmartWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartWeather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A92055A28B6B358C9CB10DF /* Pods-SmartWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartWeather/Pods-SmartWeather.release.xcconfig"; sourceTree = "<group>"; };
+		D9FDBDF01E8001E500D581F6 /* SmartWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9FDBDF41E8001E500D581F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D9FDBDF61E8001E500D581F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D9FDBDF71E8001E500D581F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D9FDBDF91E8001E500D581F6 /* SmartWeatherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartWeatherViewController.h; sourceTree = "<group>"; };
+		D9FDBDFA1E8001E500D581F6 /* SmartWeatherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartWeatherViewController.m; sourceTree = "<group>"; };
+		D9FDBDFD1E8001E600D581F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9FDBDFF1E8001E600D581F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9FDBE021E8001E600D581F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9FDBE041E8001E600D581F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9FDBE0A1E8017D600D581F6 /* SmartWeatherCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartWeatherCondition.h; sourceTree = "<group>"; };
+		D9FDBE0B1E8017D600D581F6 /* SmartWeatherCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartWeatherCondition.m; sourceTree = "<group>"; };
+		D9FDBE0D1E8017E400D581F6 /* SmartWeatherManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartWeatherManager.h; sourceTree = "<group>"; };
+		D9FDBE0E1E8017E400D581F6 /* SmartWeatherManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartWeatherManager.m; sourceTree = "<group>"; };
+		D9FDBE101E8017F700D581F6 /* SmartWeatherDailyForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartWeatherDailyForecast.h; sourceTree = "<group>"; };
+		D9FDBE111E8017F700D581F6 /* SmartWeatherDailyForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartWeatherDailyForecast.m; sourceTree = "<group>"; };
+		D9FDBE131E80180000D581F6 /* SmartWeatherClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartWeatherClient.h; sourceTree = "<group>"; };
+		D9FDBE141E80180000D581F6 /* SmartWeatherClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartWeatherClient.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9FDBDED1E8001E500D581F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848A2D4D533346B79C10BA89 /* libPods-SmartWeather.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E14FEB5E7D6C48FC56AB7B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A764FDEB323A12DB39B2B6F /* Pods-SmartWeather.debug.xcconfig */,
+				8A92055A28B6B358C9CB10DF /* Pods-SmartWeather.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF38C8CD38A5E16F40BBFD14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A1A04D977253C1803052FE7 /* libPods-SmartWeather.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9FDBDE71E8001E500D581F6 = {
+			isa = PBXGroup;
+			children = (
+				D9FDBDF21E8001E500D581F6 /* SmartWeather */,
+				D9FDBDF11E8001E500D581F6 /* Products */,
+				8E14FEB5E7D6C48FC56AB7B4 /* Pods */,
+				CF38C8CD38A5E16F40BBFD14 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D9FDBDF11E8001E500D581F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9FDBDF01E8001E500D581F6 /* SmartWeather.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9FDBDF21E8001E500D581F6 /* SmartWeather */ = {
+			isa = PBXGroup;
+			children = (
+				D9FDBDF61E8001E500D581F6 /* AppDelegate.h */,
+				D9FDBDF71E8001E500D581F6 /* AppDelegate.m */,
+				D9FDBDF91E8001E500D581F6 /* SmartWeatherViewController.h */,
+				D9FDBDFA1E8001E500D581F6 /* SmartWeatherViewController.m */,
+				D9FDBE0A1E8017D600D581F6 /* SmartWeatherCondition.h */,
+				D9FDBE0B1E8017D600D581F6 /* SmartWeatherCondition.m */,
+				D9FDBE0D1E8017E400D581F6 /* SmartWeatherManager.h */,
+				D9FDBE0E1E8017E400D581F6 /* SmartWeatherManager.m */,
+				D9FDBE101E8017F700D581F6 /* SmartWeatherDailyForecast.h */,
+				D9FDBE111E8017F700D581F6 /* SmartWeatherDailyForecast.m */,
+				D9FDBE131E80180000D581F6 /* SmartWeatherClient.h */,
+				D9FDBE141E80180000D581F6 /* SmartWeatherClient.m */,
+				D9FDBDFC1E8001E600D581F6 /* Main.storyboard */,
+				D9FDBDFF1E8001E600D581F6 /* Assets.xcassets */,
+				D9FDBE011E8001E600D581F6 /* LaunchScreen.storyboard */,
+				D9FDBE041E8001E600D581F6 /* Info.plist */,
+				D9FDBDF31E8001E500D581F6 /* Supporting Files */,
+			);
+			path = SmartWeather;
+			sourceTree = "<group>";
+		};
+		D9FDBDF31E8001E500D581F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9FDBDF41E8001E500D581F6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9FDBDEF1E8001E500D581F6 /* SmartWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9FDBE071E8001E600D581F6 /* Build configuration list for PBXNativeTarget "SmartWeather" */;
+			buildPhases = (
+				C682085B078388D12D552DB2 /* [CP] Check Pods Manifest.lock */,
+				D9FDBDEC1E8001E500D581F6 /* Sources */,
+				D9FDBDED1E8001E500D581F6 /* Frameworks */,
+				D9FDBDEE1E8001E500D581F6 /* Resources */,
+				DE0E8A15553B93DE8D6ACF33 /* [CP] Embed Pods Frameworks */,
+				88DFF87B9ED370EE46FC8B0E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartWeather;
+			productName = SmartWeather;
+			productReference = D9FDBDF01E8001E500D581F6 /* SmartWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9FDBDE81E8001E500D581F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Hari;
+				TargetAttributes = {
+					D9FDBDEF1E8001E500D581F6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D9FDBDEB1E8001E500D581F6 /* Build configuration list for PBXProject "SmartWeather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9FDBDE71E8001E500D581F6;
+			productRefGroup = D9FDBDF11E8001E500D581F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9FDBDEF1E8001E500D581F6 /* SmartWeather */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9FDBDEE1E8001E500D581F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9FDBE031E8001E600D581F6 /* LaunchScreen.storyboard in Resources */,
+				D9FDBE001E8001E600D581F6 /* Assets.xcassets in Resources */,
+				D9FDBDFE1E8001E600D581F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88DFF87B9ED370EE46FC8B0E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartWeather/Pods-SmartWeather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C682085B078388D12D552DB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE0E8A15553B93DE8D6ACF33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartWeather/Pods-SmartWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9FDBDEC1E8001E500D581F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9FDBE151E80180000D581F6 /* SmartWeatherClient.m in Sources */,
+				D9FDBE0F1E8017E400D581F6 /* SmartWeatherManager.m in Sources */,
+				D9FDBE121E8017F700D581F6 /* SmartWeatherDailyForecast.m in Sources */,
+				D9FDBDFB1E8001E500D581F6 /* SmartWeatherViewController.m in Sources */,
+				D9FDBDF81E8001E500D581F6 /* AppDelegate.m in Sources */,
+				D9FDBE0C1E8017D600D581F6 /* SmartWeatherCondition.m in Sources */,
+				D9FDBDF51E8001E500D581F6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D9FDBDFC1E8001E600D581F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9FDBDFD1E8001E600D581F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9FDBE011E8001E600D581F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9FDBE021E8001E600D581F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9FDBE051E8001E600D581F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9FDBE061E8001E600D581F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9FDBE081E8001E600D581F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A764FDEB323A12DB39B2B6F /* Pods-SmartWeather.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SmartWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = smartweather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D9FDBE091E8001E600D581F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A92055A28B6B358C9CB10DF /* Pods-SmartWeather.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SmartWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = smartweather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9FDBDEB1E8001E500D581F6 /* Build configuration list for PBXProject "SmartWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9FDBE051E8001E600D581F6 /* Debug */,
+				D9FDBE061E8001E600D581F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9FDBE071E8001E600D581F6 /* Build configuration list for PBXNativeTarget "SmartWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9FDBE081E8001E600D581F6 /* Debug */,
+				D9FDBE091E8001E600D581F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9FDBDE81E8001E500D581F6 /* Project object */;
+}
